@@ -70,7 +70,7 @@ Alerts data summary:
               fontSize: 15, boxShadow: '0 2px 10px rgba(59,130,246,.3)',
             }}>🤖</div>
             <div>
-              <div style={{ fontWeight: 700, fontSize: 14, letterSpacing: '-.01em' }}>Nova AI</div>
+              <div style={{ fontWeight: 700, fontSize: 14, letterSpacing: '-.01em' }}>AlertsIQ AI</div>
               <div style={{
                 fontSize: 10, fontFamily: 'var(--font-mono)', color: 'var(--muted)',
                 background: 'rgba(255,255,255,.04)', border: '1px solid var(--border2)',
@@ -109,7 +109,7 @@ Alerts data summary:
                 background: 'rgba(59,130,246,.08)', border: '1px solid rgba(59,130,246,.14)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22,
               }}>⚡</div>
-              Ask Nova anything about your alerts data...
+              Ask anything about your alerts data...
             </div>
           ) : (
             <>
@@ -121,7 +121,7 @@ Alerts data summary:
                       marginBottom: 4, opacity: .6, textTransform: 'uppercase',
                       color: m.role === 'user' ? 'rgba(255,255,255,.6)' : '#60a5fa',
                     }}>
-                      {m.role === 'user' ? 'You' : '⚡ Nova'}
+                      {m.role === 'user' ? 'You' : '⚡ AI'}
                     </div>
                     <div style={{ fontSize: 13, lineHeight: 1.65, whiteSpace: 'pre-wrap' }}>
                       {m.content}
