@@ -202,8 +202,8 @@ Respond concisely using bullet points with exact numbers where available. Be ana
             if resp.status_code == 200:
                 data = resp.json()
                 return {"reply": data["message"]["content"], "model": "llama2 · Ollama"}
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Ollama error: {e}")
 
     # Fallback: rule-based response using context
     df = load_df()
