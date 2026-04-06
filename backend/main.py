@@ -181,28 +181,41 @@ class ChatRequest(BaseModel):
     context: str = ""
 
 
+GREETINGS = {"hi", "hello", "hey", "hii", "helo", "sup", "yo", "hi there", "hello there", "hey there", "how are you", "how r u", "what's up", "whats up"}
+
+def is_greeting(msg: str) -> bool:
+    cleaned = msg.strip().lower().rstrip("!.,?")
+    if cleaned in GREETINGS:
+        return True
+    # Single word that starts with a greeting word
+    words = cleaned.split()
+    return len(words) <= 3 and words[0] in {"hi", "hello", "hey", "hii", "helo"}
+
 @app.post("/api/chat")
 async def chat(req: ChatRequest):
-    system = f"""You are Nova, an AI analyst embedded in AlertsIQ, an operations monitoring dashboard.
-{req.context}
-Respond concisely using bullet points with exact numbers where available. Be analytical and helpful."""
+    # Fast greeting shortcut — no model needed
+    if is_greeting(req.message):
+        return {"reply": "How can I assist you?", "model": "AlertsIQ AI"}
+
+    system = f"""You are an AI analyst in the AlertsIQ dashboard. Only answer questions about the alerts data. Do not volunteer data summaries unless the user specifically asks. Answer in 1-3 short sentences max. No long explanations. No filler. Use exact numbers when available.
+{req.context}"""
 
     messages = []
     for m in req.history[-6:]:
         messages.append({"role": m["role"], "content": m["content"]})
     messages.append({"role": "user", "content": req.message})
 
-    # Try Ollama first
+    # Try Ollama with mistral
     try:
-        async with httpx.AsyncClient(timeout=120) as client:
+        async with httpx.AsyncClient(timeout=60) as client:
             resp = await client.post(
                 "http://localhost:11434/api/chat",
-                json={"model": "llama2:latest", "messages": [{"role": "system", "content": system}] + messages, "stream": False},
+                json={"model": "mistral:latest", "messages": [{"role": "system", "content": system}] + messages, "stream": False},
             )
             print(f"Ollama status: {resp.status_code}, body: {resp.text[:300]}")
             if resp.status_code == 200:
                 data = resp.json()
-                return {"reply": data["message"]["content"], "model": "llama2:latest · Ollama"}
+                return {"reply": data["message"]["content"], "model": "mistral:latest · Ollama"}
     except Exception as e:
         print(f"Ollama error: {type(e).__name__}: {e}")
 
