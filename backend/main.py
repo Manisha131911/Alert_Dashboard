@@ -199,11 +199,12 @@ Respond concisely using bullet points with exact numbers where available. Be ana
                 "http://localhost:11434/api/chat",
                 json={"model": "llama2", "messages": [{"role": "system", "content": system}] + messages, "stream": False},
             )
+            print(f"Ollama status: {resp.status_code}, body: {resp.text[:300]}")
             if resp.status_code == 200:
                 data = resp.json()
                 return {"reply": data["message"]["content"], "model": "llama2 · Ollama"}
     except Exception as e:
-        print(f"Ollama error: {e}")
+        print(f"Ollama error: {type(e).__name__}: {e}")
 
     # Fallback: rule-based response using context
     df = load_df()
