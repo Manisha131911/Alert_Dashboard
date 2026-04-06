@@ -1,0 +1,121 @@
+date,application,severity,description
+2025-07-04,Network,High,Service unavailable
+2025-07-06,Orders,Critical,Memory usage high
+2025-07-06,Inventory,Low,Memory usage high
+2025-07-07,Payments,High,Memory usage high
+2025-07-08,Network,High,CPU spike detected
+2025-07-11,CRM,High,Memory usage high
+2025-07-06,Inventory,Low,API failure
+2025-07-10,CRM,Critical,Connection timeout
+2025-07-10,Billing,Critical,Payment failure
+2025-07-10,Network,Critical,Database error
+2025-07-06,Billing,Low,Payment failure
+2025-07-10,Inventory,High,Connection timeout
+2025-07-11,Network,Critical,Connection timeout
+2025-07-06,Network,High,Payment failure
+2025-07-01,Billing,Low,Database error
+2025-07-10,CRM,Critical,Database error
+2025-07-02,Billing,High,Service unavailable
+2025-07-05,Billing,Critical,Connection timeout
+2025-07-05,CRM,Critical,API failure
+2025-07-11,Network,High,CPU spike detected
+2025-07-07,Payments,High,Payment failure
+2025-07-11,Inventory,High,CPU spike detected
+2025-07-04,Billing,Medium,Payment failure
+2025-07-08,CRM,Medium,Connection timeout
+2025-07-09,CRM,High,Slow response
+2025-07-09,Billing,Low,Database error
+2025-07-07,Inventory,High,Connection timeout
+2025-07-10,Billing,High,API failure
+2025-07-05,Billing,Medium,Service unavailable
+2025-07-07,Inventory,Low,CPU spike detected
+2025-07-04,Payments,Medium,Slow response
+2025-07-01,Orders,Medium,Database error
+2025-07-01,Payments,Medium,Database error
+2025-07-08,Inventory,Critical,CPU spike detected
+2025-07-09,Network,Critical,API failure
+2025-07-09,Billing,Critical,Database error
+2025-07-06,Payments,Critical,Payment failure
+2025-07-01,CRM,Low,API failure
+2025-07-11,Payments,Low,Memory usage high
+2025-07-07,Orders,Low,Slow response
+2025-07-09,Orders,High,Payment failure
+2025-07-08,Orders,Medium,Connection timeout
+2025-07-01,Network,Medium,Memory usage high
+2025-07-07,Inventory,Low,Slow response
+2025-07-04,Inventory,Medium,Service unavailable
+2025-07-04,Orders,Low,Database error
+2025-07-08,Payments,Critical,API failure
+2025-07-09,CRM,Critical,API failure
+2025-07-09,Billing,Medium,Payment failure
+2025-07-02,Billing,Medium,Database error
+2025-07-11,CRM,Critical,Service unavailable
+2025-07-04,CRM,Medium,Memory usage high
+2025-07-07,Orders,Critical,Service unavailable
+2025-07-11,Network,High,Database error
+2025-07-04,Network,Medium,Payment failure
+2025-07-02,Orders,Critical,Slow response
+2025-07-11,Payments,Medium,Memory usage high
+2025-07-03,Orders,Low,Memory usage high
+2025-07-06,CRM,Medium,Memory usage high
+2025-07-03,Payments,Critical,Database error
+2025-07-01,Payments,Critical,Database error
+2025-07-07,Billing,Critical,Connection timeout
+2025-07-10,CRM,Medium,CPU spike detected
+2025-07-03,CRM,High,CPU spike detected
+2025-07-08,Payments,Critical,Memory usage high
+2025-07-07,Network,Medium,Service unavailable
+2025-07-09,Payments,Low,Database error
+2025-07-10,Billing,Critical,Slow response
+2025-07-11,CRM,Low,API failure
+2025-07-10,Payments,Critical,Database error
+2025-07-08,Orders,High,Database error
+2025-07-09,Network,High,Database error
+2025-07-02,Orders,Low,Database error
+2025-07-08,Payments,High,Service unavailable
+2025-07-04,Inventory,Low,Service unavailable
+2025-07-10,Billing,High,Memory usage high
+2025-07-05,Payments,Low,Slow response
+2025-07-10,CRM,Medium,Service unavailable
+2025-07-05,Orders,Critical,Service unavailable
+2025-07-10,CRM,Critical,Connection timeout
+2025-07-01,CRM,High,CPU spike detected
+2025-07-02,CRM,High,Payment failure
+2025-07-01,Billing,High,Memory usage high
+2025-07-03,Payments,Low,API failure
+2025-07-06,Orders,Low,Memory usage high
+2025-07-01,Billing,Medium,Service unavailable
+2025-07-06,Orders,Low,Memory usage high
+2025-07-02,Inventory,Low,Payment failure
+2025-07-02,Payments,Critical,Connection timeout
+2025-07-05,Payments,Critical,Database error
+2025-07-01,Inventory,Medium,Database error
+2025-07-08,Orders,Medium,Payment failure
+2025-07-11,Inventory,Low,Database error
+2025-07-03,Orders,Medium,Slow response
+2025-07-09,Network,Low,Connection timeout
+2025-07-07,Network,Medium,Memory usage high
+2025-07-01,Payments,Medium,Payment failure
+2025-07-10,CRM,Low,API failure
+2025-07-10,Payments,Medium,CPU spike detected
+2025-07-08,Network,High,Payment failure
+2025-07-06,Network,Low,Connection timeout
+2025-07-07,Payments,High,API failure
+2025-07-06,CRM,Critical,CPU spike detected
+2025-07-02,Network,Low,Memory usage high
+2025-07-02,Network,High,CPU spike detected
+2025-07-02,Billing,High,Database error
+2025-07-05,Network,High,Service unavailable
+2025-07-06,Payments,Low,Payment failure
+2025-07-04,Orders,Low,Service unavailable
+2025-07-11,CRM,High,Payment failure
+2025-07-02,Inventory,Low,Database error
+2025-07-02,Network,Low,API failure
+2025-07-04,Orders,Low,Service unavailable
+2025-07-03,Inventory,Critical,Payment failure
+2025-07-05,Payments,Critical,Payment failure
+2025-07-06,Payments,Medium,Memory usage high
+2025-07-07,Payments,Critical,Payment failure
+2025-07-04,Network,Critical,Database error
+2025-07-04,Payments,Critical,Memory usage high
+2025-07-02,Billing,Low,Service unavailable
